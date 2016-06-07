@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://vesti-ukr.com/strana/141132-kabmin-poruchil-pereschitat-gazovye-platezhki-i-vernut-ukraincam-dengi -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная | Вести</title>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/styles.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="all">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed hidden-xs ad-menu" role="navigation">
+                <div class="container1">
+                    <div class="collapse navbar-collapse" id="ad-menu">
+                        <ul class="nav navbar-nav main-menu">
+                            <li><a href="http://reporter.vesti-ukr.com/" target="_blank"><b>Вести Репортер</b></a></li>
+                            <li><a href="http://ubr.ua/" target="_blank"><b>UBR.ua</b></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCw0yOBzjVydRjSVnXVIGt3w" target="_blank"><b>UBR TV</b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/" target="_blank"><b><b>Радио Вести</b></b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/online.html" target="_blank"><b><span class="glyphicon glyphicon-headphones"></span> слушать</b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/online/view=video.html" target="_blank"><b><span class="glyphicon glyphicon-play"></span> смотреть</b></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-search" data-toggle="collapse" data-target="#hide-me"><i class="fa fa-search"></i></button>
+                    <div id="hide-me" class="collapse">
+                        <div class="top-search">
+                            <form role="search" method="get" action="http://vesti-ukr.com/search">
+                                <div class="search-form">
+                                    <label>
+                                        <input type="text" class="search-field" placeholder="Поиск..." value="" name="search[keyword]" maxlength="50">
+                                    </label>
+                                    <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="hidden" name="search[sort]" value="publish_date" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row site-header">
+            <div class="col-md-4 col-sm-5 hidden-xs widget-left">
+                <div class="info-weather" id="top_informer_weather"></div>
+            </div>
+            <div class="col-md-4 col-sm-3 hidden-xs logo">
+                <a href="index.html"></a>
+            </div>
+            <div class="col-md-4 col-sm-4 hidden-xs info-right">
+                <div class="info-currency" id="top_informer_currency"></div>
+                <script type="text/javascript" src="http://api.vesti-ukr.com/vesti/topinformer.jsonp"></script>
+            </div>
+        </div>
+            <nav class="navbar navbar-default navbar-fixed main-menu" role="navigation">
+                <div class="container1">
+                    <div class="navbar-header">
+                        <div class="left-block-xs">
+                            <a href="#" class="visible-xs"></a>
+                        </div>
+                        <div>
+                            <div>
+                                <button data-target="#main-menu" data-toggle="collapse" class="btn navbar-toggle more-xs" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="#search-me" data-toggle="collapse" class="btn navbar-toggle search-xs"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-me" class="collapse">
+                        <div class="top-search">
+                            <form role="search" method="get" action="#">
+                                <div class="search-form">
+                                    <label>
+                                        <input type="text" class="search-field" placeholder="Поиск..." value="" name="search[keyword]" maxlength="50">
+                                    </label>
+                                    <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="hidden" name="search[sort]" value="publish_date" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav main-menu">
+                            <li><a  href="#">Украина</a></li>
+                            <li><a  href="#">Бизнес</a></li>
+                            <li><a  href="#">Киев</a></li>
+                            <li><a  href="#">Политика</a></li>
+                            <li><a  href="#">Мир</a></li>
+                            <li><a  href="#">Культура</a></li>
+                            <li><a  href="#">Спорт</a></li>
+                            <li><a  href="#">Инфографика</a></li>
+                            <li><a  href="#">Фото</a></li>
+                            <li><a  href="#">Видео</a></li>
+                            <li class="divider visible-xs"></li>
+                            <li class="dropdown-header visible-xs">Сюжеты</li>
+                            <li class="visible-xs"><a href="tables.html">ЕВРО 2016</a></li>
+                            <li class="visible-xs"><a href="#">Украинский футбол</a></li>
+                            <li class="visible-xs"><a href="weather.html">Погода</a></li>
+                            <li class="visible-xs"><a href="horoscope.html">Гороскоп</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-default navbar-fixed hidden-xs second-menu" role="navigation">
+            <div class="container1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="second-menu">
+                        <li><a href="tables.html"><i class="fa fa-futbol-o"></i> ЕВРО 2016</a></li>
+                        <li><a href="#"><i class="fa fa-star"></i> Гороскоп</a></li>
+                        <li><a href="weather.html"><i class="fa fa-sun-o"></i> Погода</a></li>
+                        <li><a href="horoscope.html"><i class="fa fa-calendar-check-o"></i> Афиша</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="main">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3 newsfeed">
+                    <div class="title-rubric">
+                        <a href="#">Все новости</a>
+                    </div>
+
+                    <ul class="list-newsfeed">
+                        <li>
+                            <div class="time">13:37</div>
+                            <a href="#" class="red-news">Под Киевом застрелили трех человек</a>
+                        </li>
+                        <li>
+                            <div class="time">13:37</div>
+                            <a href="#" class="red-news">"Прокурор" Крыма Поклонская завела блог</a>
+                        </li>
+                        <li>
+                            <div class="time">13:33</div>
+                            <a href="#" class="red-news">Кто пойдет на промежуточные выборы в Верховную Раду от "Відродження"</a>
+                        </li>
+                        <li>
+                            <div class="time">13:27</div>
+                            <a href="#" class="red-news">Роль Джеймса Бонда предложили звезде "Дивергента"</a>
+                        </li>
+                        <li>
+                            <div class="time">13:20</div>
+                            <a href="#" class="red-news">Что смотреть и за кого болеть: главные спортивные события июня (обновляется)</a>
+                        </li>
+                        <li>
+                            <div class="time">13:14</div>
+                            <a href="" class="red-news">В МВФ объявили, когда Украина получит транш</a>
+                        </li>
+                        <li>
+                            <div class="time">13:11</div>
+                            <a href="#" class="red-news">Розенко о дополнительных налогах: Украинцы не такие бедные, как кажется</a>
+                        </li>
+                        <li>
+                            <div class="time">13:07</div>
+                            <a href="#" class="red-news">Создатели "Игры престолов" сократят седьмой сезон</a>
+                        </li>
+                        <li>
+                            <div class="time">13:01</div>
+                            <a href="#" class="red-news">В Василькове хоронят девочек, которых сбил пьяный водитель</a>
+                        </li>
+                        <li>
+                            <div class="time">13:00</div>
+                            <a href="#" class="red-news">Евро-2016. Группа F: визитки сборных, шансы, расписание матчей</a>
+                        </li>
+                        <li>
+                            <div class="time">12:36</div>
+                            <a href="#" class="red-news">В Киевской области накрыли сеть борделей с наркотиками и оружием <i class="fa fa-camera"></i></a>
+                        </li>
+                        <li>
+                            <div class="time">12:30</div>
+                            <a href="#" class="red-news">Милевский рассказал о штрафах в «Динамо»</a>
+                        </li>
+                    </ul>
+                    <div class="block-earlier">
+                        <noindex>
+                            <a href="#" class="earlier">ранее</a>
+                        </noindex>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-5 center-main-block">
+                    <article class="main-news">
+                        <div class="image-main-news">
+                            <a href="#">
+                                <img src="img/banner-main.png" alt="" title="" border="0">
+                                <div class="title-main-news">
+                                    Источник: Кличко решил перевести счета Киева из "Хрещатика" в другой коммерческий банк
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                    <div class="title-rubric">
+                        <a href="#">Публикации</a>
+                    </div>
+
+                    <div class="main-block">
+                        <div class="top-news">
+
+                            <div class="rubric-top-news">
+                                <a href="#">Нардеп предложил амнистировать совершивших преступления бойцов АТО</a>
+                                <time class="date">12:03</time>
+                            </div>
+
+                            <div class="rubric-top-news">
+                                <a href="#">Украинцев будут пускать в Беларусь только по загранпаспортам</a>
+                                <time class="date">11:30</time>
+                            </div>
+
+                            <div class="rubric-top-news">
+                                <a href="#">Вероятный попутчик пропавшего парня по BlaBlaCar заявил об алиби <i class="fa fa-camera" aria-hidden="true"></i></a>
+                                <time class="date">11:23</time>
+                            </div>
+
+                            <div class="rubric-top-news">
+                                <a href="#">После комментирования офшоров Путина Костин уволился с должности главы набсовета ВТБ Банка <i class="fa fa-camera"></i><i class="fa fa-paperclip"></i></a>
+                                <time class="date">11:03</time>
+                            </div>
+
+                            <div class="rubric-top-news">
+                                <a href="#">В команде Порошенко назвали журналистов "мразями"</a>
+                                <time class="date">11:45</time>
+                            </div>
+
+                            <div class="rubric-top-news">
+                                <a href="#">За феерической развязкой "Мартовского безумия" следили75 тысяч зрителей <i class="fa fa-video-camera"></i></a>
+                                <time class="date">10:45</time>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-4 right-column">
+                    <div class="title-rubric">
+                        <a href="#">Выбор вестей</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                            <div class="col-xs-12 football-game-holder">
+                                <div class="football-game">
+                                <a href="#">
+                                    <div class="football-game-body">
+                                        <div class="score">5:0</div>
+                                        <div class="teams">Динамо - Шахтер</div>
+                                        <div class="game-time">20:15</div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 hot-news">
+                                <a href="#"><h2>"Интерсити" Киев-Херсон запустят на юбилей Николы Теслы</h2></a>
+                                <div class="hot-news-desc">
+                                    Время в пути для путешественников сократится в полтора раза
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12 hidden-xs promo-holder">
+                            <img src="img/promo/right-promo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row opinions-main-block">
+                <div class="select-block">
+                    <div class="title-rubric-select"><span>Мнения</span></div>
+                    <div class="color-bar"></div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="opinion-person">
+                        <div class="opinion-photo"><img src="img/faces/alex-ohrimenko.png" alt=""></div>
+                        <div class="opinion-name"><a href="#">Александр Охрименко</a></div>
+                        <div class="opinion-desc"><a href="#">Почему в Украини за были об ассоциации с ЕС</a></div>
+                        <div class="opinion-date">3 сентября 2016</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="opinion-person">
+                        <div class="opinion-photo"><img src="img/faces/yuli-skibitskaya.png" alt=""></div>
+                        <div class="opinion-name"><a href="#">Арина Шевченко</a></div>
+                        <div class="opinion-desc"><a href="#">Закрытые детсады</a></div>
+                        <div class="opinion-date">31 августа 2015</div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="opinion-person">
+                        <div class="opinion-photo"><img src="img/faces/evgeniy-yasenov.png" alt=""></div>
+                        <div class="opinion-name"><a href="#">Олег Волошин</a></div>
+                        <div class="opinion-desc"><a href="#">Евроинтеграция: встреча с реальностью</a></div>
+                        <div class="opinion-date">11 июля 2015</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row footer">
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/strana">Украина</a></li>
+                                    <li><a  href="http://business.vesti.ua/">Бизнес</a></li>
+                                    <li><a  href="http://vesti-ukr.com/politika">Политика</a></li>
+                                    <li><a  href="http://vesti-ukr.com/mir">Мир</a></li>
+                                    <li><a  href="http://vesti-ukr.com/kultura">Культура</a></li>
+                                    <li><a  href="http://vesti-ukr.com/svetskie-vesti">Светские вести</a></li>
+                                    <li><a  href="http://vesti-ukr.com/sport">Спорт</a></li>
+                                    <li><a  href="http://vesti-ukr.com/poleznoe">Полезные вести</a></li>
+                                    <li><a  href="http://vesti-ukr.com/nauka-i-tehnologii">Наука и технологии</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/infografika">Инфографика</a></li>
+                                    <li><a  href="http://photo.vesti-ukr.com">Фото</a></li>
+                                    <li><a  href="http://video.vesti-ukr.com">Видео</a></li>
+                                    <li><a  href="http://auto.vesti.ua/">Авто</a></li>
+                                    <li><a  href="http://vesti-ukr.com/blogs">Мнения</a></li>
+                                    <li class="divider"></li>
+                                    <li><a  href="http://reporter.vesti.ua">Вести Репортер</a></li>
+                                    <li><a target="_blank" href="http://ubr.ua/">UBR.ua</a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCw0yOBzjVydRjSVnXVIGt3w">UBR TV</a></li>
+                                    <li><a target="_blank" href="http://radio.vesti-ukr.com/">Радио Вести</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/kiev"> Киев</a></li>
+                                    <li><a  href="http://vesti-ukr.com/odessa">Одесса</a></li>
+                                    <li><a  href="http://vesti-ukr.com/harkov"> Харьков</a></li>
+                                    <li><a  href="http://vesti-ukr.com/donbass">Донбасс</a></li>
+                                    <li><a  href="http://vesti-ukr.com/pridneprove">Приднепровье</a></li>
+                                    <li><a  href="http://vesti-ukr.com/krym">Крым</a></li>
+                                    <li><a  href="http://vesti-ukr.com/lvov">Львов</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/page/o-proekte-vesti"> О проекте</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/reklama">Реклама</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/pravila-polzovanija"> Использование материалов vesti.ua</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/vakansii">Вакансии</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/soglashenie-o-konfidencialnosti">Соглашение о конфиденциальности</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/pravila-polzovanija-sajtom">Правила пользования сайтом</a></li>
+                                </ul>
+                                <div class="counters">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
