@@ -503,6 +503,42 @@ a {
 }
 /*------------------End Nav Bar---------------------*/
 /*----------------Main News--------------------*/
+.main-news {
+    overflow: hidden;
+}
+.main-news img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    display: block;
+}
+.main-news:hover img {
+    opacity: .85;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.right-column {
+    padding: 0;
+    width: 300px;
+}
+
+.hot-news {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.hot-news h2 {
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+}
+
+.hot-news a:hover {
+    color: #333333;
+}
+
 .content-main-top {
     padding-left: 30px;
     padding-right: 0;
@@ -520,7 +556,7 @@ a {
     width: 100%;
 }
 .main-news .rubric-main-news {
-    font: 18px 'Roboto', sans-serif;
+    font-size: 18px;
 }
 .main-news .rubric-main-news a {
     color: #06256c;
@@ -538,7 +574,7 @@ a {
     color: #333333;
 }
 .main-news .subtitle-main-news {
-    font: 18px 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .football-game-holder {
@@ -552,6 +588,8 @@ a {
     height: 79px;
     display: block;
     text-align: center;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 
 .football-game:before {
@@ -579,12 +617,11 @@ a {
 }
 
 .football-game .football-game-body .teams {
-    color: #ce0c21;
     font-size: 20px;
     line-height: 20px;
     font-weight: bold;
-    text-transform: uppercase;
     padding-top: 3px;
+    color: #ce0c21;
 }
 .football-game .football-game-body .game-time {
     color: #ffffff;
@@ -952,41 +989,6 @@ a {
 }
 .top-softnews .text .title a {
     font-size: 18px;
-    color: #333333;
-}
-.main-news {
-    overflow: hidden;
-}
-.main-news img {
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    display: block;
-}
-.main-news:hover img {
-    opacity: .85;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-
-.right-column {
-    padding: 0;
-    width: 300px;
-}
-
-.hot-news {
-    margin-bottom: 15px;
-    padding: 0;
-}
-
-.hot-news h2 {
-    font-size: 20px;
-    margin: 15px 0 5px 0;
-}
-
-.hot-news a:hover {
     color: #333333;
 }
 
