@@ -12,7 +12,7 @@ header .container {
     background-color: #ffffff;
     padding-bottom: 15px;
 }
-.container {
+.branding .container {
     max-width: 960px;
 }
 .wrap {
@@ -521,9 +521,30 @@ a {
 }
 
 .right-column {
-    padding: 0;
-    width: 300px;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+.branding .right-column {
+    padding: 0;
+}
+
+.top-right-block .small-promo>img {
+    padding-top: 17px;
+    margin: 0 auto;
+    display: block;
+}
+
+.select-block {
+    margin-top: 15px;
+}
+
+.promo-holder > div,
+.promo-holder > img {
+    margin: 0 auto !important;
+    display: block;
+}
+
 
 .hot-news {
     margin-bottom: 15px;
@@ -584,7 +605,7 @@ a {
 .football-game {
     position: relative;
     background: url("../img/football-bg.png");
-    width: 300px;
+    width: 100%;
     height: 79px;
     display: block;
     text-align: center;
@@ -765,7 +786,15 @@ a {
     padding: 0;
 }
 .content-main-right .nav-tabs {
-    padding: 30px 20px 20px;
+    padding-top: 15px;
+}
+.content-main-right .nav-tabs,
+.content-main-right .tab-content {
+    width: 300px;
+    margin: 0 auto;
+}
+.content-main-right .nav-tabs {
+    padding: 15px 20px 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #06256c;
 }
@@ -1600,11 +1629,16 @@ a {
 /*------------------End Footer---------------------*/
 /*--------------------Media-----------------------*/
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1200px;
+    .center-main-block {
+        width: 577px;
+    }
+
+    .right-column {
+        width: 300px;
     }
 }
 @media screen and (max-width: 1200px) {
+
     .top-softnews-horizontal img {
         width: 130px;
     }
@@ -1994,6 +2028,13 @@ a {
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .center-main-block {
+        width: 427px;
+    }
+
+    .right-column {
+        width: 300px;
+    }
     .content-main-right {
         padding: 0 0 20px 23px;
     }
@@ -2008,11 +2049,7 @@ a {
     }
 }
 @media screen and (min-width: 992px) {
-    .content-main-right {
-        overflow: hidden;
-        height: 927px;
-    }
-    .center-main-block {
+    .branding .center-main-block {
         width: 420px;
     }
 }
@@ -2663,6 +2700,7 @@ a {
 }
 .opinion-main .name a {
     color: #009790;
+    font-size: 22px;
 }
 .opinion-main .opinion-text {
     font-family: 'Roboto', sans-serif;
@@ -3473,6 +3511,9 @@ body .team-right-report a img {
     .right-column,
     .select-block {
         padding: 0 15px;
+    }
+    .newsfeed {
+    	padding-top: 15px;
     }
     .football-game {
         margin: 0 auto;
