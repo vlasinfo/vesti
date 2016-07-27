@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://vesti-ukr.com/strana/141132-kabmin-poruchil-pereschitat-gazovye-platezhki-i-vernut-ukraincam-dengi -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Голосования | Вести</title>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/styles.css" media="all">
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="all">
+
+<!-- votes styles -->
+    <link type="text/css" rel="stylesheet" href="css/votes.css" media="all">
+<!-- end votes styles -->
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed hidden-xs ad-menu" role="navigation">
+                <div class="container1">
+                    <div class="collapse navbar-collapse" id="ad-menu">
+                        <ul class="nav navbar-nav main-menu">
+                            <li><a href="http://reporter.vesti-ukr.com/" target="_blank"><b>Вести Репортер</b></a></li>
+                            <li><a href="http://ubr.ua/" target="_blank"><b>UBR.ua</b></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCw0yOBzjVydRjSVnXVIGt3w" target="_blank"><b>UBR TV</b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/" target="_blank"><b><b>Радио Вести</b></b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/online.html" target="_blank"><b><span class="glyphicon glyphicon-headphones"></span> слушать</b></a></li>
+                            <li><a href="http://radio.vesti-ukr.com/online/view=video.html" target="_blank"><b><span class="glyphicon glyphicon-play"></span> смотреть</b></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-search" data-toggle="collapse" data-target="#hide-me"><i class="fa fa-search"></i></button>
+                    <div id="hide-me" class="collapse">
+                        <div class="top-search">
+                            <form role="search" method="get" action="http://vesti-ukr.com/search">
+                                <div class="search-form">
+                                    <label>
+                                        <input type="text" class="search-field" placeholder="Поиск..." value="" name="search[keyword]" maxlength="50">
+                                    </label>
+                                    <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="hidden" name="search[sort]" value="publish_date" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row site-header">
+            <div class="col-md-4 col-sm-5 hidden-xs widget-left">
+                <div class="info-weather" id="top_informer_weather"></div>
+            </div>
+            <div class="col-md-4 col-sm-3 hidden-xs logo">
+                <a href="index.html"></a>
+            </div>
+            <div class="col-md-4 col-sm-4 hidden-xs info-right">
+                <div class="info-currency" id="top_informer_currency"></div>
+                <script type="text/javascript" src="http://api.vesti-ukr.com/vesti/topinformer.jsonp"></script>
+            </div>
+        </div>
+            <nav class="navbar navbar-default navbar-fixed main-menu" role="navigation">
+                <div class="container1">
+                    <div class="navbar-header">
+                        <div class="left-block-xs">
+                            <a href="#" class="visible-xs"></a>
+                        </div>
+                        <div>
+                            <div>
+                                <button data-target="#main-menu" data-toggle="collapse" class="btn navbar-toggle more-xs" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button data-target="#search-me" data-toggle="collapse" class="btn navbar-toggle search-xs"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-me" class="collapse">
+                        <div class="top-search">
+                            <form role="search" method="get" action="#">
+                                <div class="search-form">
+                                    <label>
+                                        <input type="text" class="search-field" placeholder="Поиск..." value="" name="search[keyword]" maxlength="50">
+                                    </label>
+                                    <button type="submit" class="btn btn-default search-submit"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="hidden" name="search[sort]" value="publish_date" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav main-menu">
+                            <li><a  href="#">Украина</a></li>
+                            <li><a  href="#">Бизнес</a></li>
+                            <li><a  href="#">Киев</a></li>
+                            <li><a  href="#">Политика</a></li>
+                            <li><a  href="#">Мир</a></li>
+                            <li><a  href="#">Культура</a></li>
+                            <li><a  href="#">Спорт</a></li>
+                            <li><a  href="#">Инфографика</a></li>
+                            <li><a  href="#">Фото</a></li>
+                            <li><a  href="#">Видео</a></li>
+                            <li class="divider visible-xs"></li>
+                            <li class="dropdown-header visible-xs">Сюжеты</li>
+                            <li class="visible-xs"><a href="tables.html">ЕВРО 2016</a></li>
+                            <li class="visible-xs"><a href="#">Украинский футбол</a></li>
+                            <li class="visible-xs"><a href="weather.html">Погода</a></li>
+                            <li class="visible-xs"><a href="horoscope.html">Гороскоп</a></li>
+                            <li class="visible-xs"><a href="blogs.html"><i class="fa fa-pencil"></i> Блоги</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-default navbar-fixed hidden-xs second-menu" role="navigation">
+            <div class="container1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="second-menu">
+                        <li><a href="tables.html"><i class="fa fa-futbol-o"></i> ЕВРО 2016</a></li>
+                        <li><a href="#"><i class="fa fa-star"></i> Гороскоп</a></li>
+                        <li><a href="weather.html"><i class="fa fa-sun-o"></i> Погода</a></li>
+                        <li><a href="horoscope.html"><i class="fa fa-calendar-check-o"></i> Афиша</a></li>
+                        <li><a href="blogs.html"><i class="fa fa-pencil"></i> Блоги</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+
+<!-- Vote -->
+
+    <div class="votes-holder">
+        <div class="row vote-banner">
+            <img src="img/votes/vote-banner-big.png" class="img-responsive hidden-xs" alt="" >
+            <img src="img/votes/vote-banner-small.png" class="img-responsive visible-xs text-center" alt="" >
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-1.png" alt="">
+                    <div class="desc">Лучший спортсмен</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-2.png" alt="">
+                    <div class="desc">Лучший президент</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-3.png" alt="">
+                    <div class="desc">Лучший мэр</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-4.png" alt="">
+                    <div class="desc">Лучший исполнитель</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-5.png" alt="">
+                    <div class="desc">Лучший полнометражный фильм</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-6.png" alt="">
+                    <div class="desc">Лучшие телесериалы</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-7.png" alt="">
+                    <div class="desc">Лучшая книга/писатель </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-8.png" alt="">
+                    <div class="desc">Лучшая песня</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-9.png" alt="">
+                    <div class="desc">Лучшиий врач</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-10.png" alt="">
+                    <div class="desc">Лучшая група</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-11.png" alt="">
+                    <div class="desc">Легендарные украинцы</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-12.png" alt="">
+                    <div class="desc">«Сделано в Украине»</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-13.png" alt="">
+                    <div class="desc">Лучшие фестивали</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-14.png" alt="">
+                    <div class="desc">Лучший телеканал</div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 vote-block">
+                <a href="#">
+                    <img src="img/votes/ico-15.png" alt="">
+                    <div class="desc">Лучшие в мире</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+<!-- end Vote -->
+
+
+
+
+
+        </div><!-- end .container -->
+    </div><!-- end .main -->
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row footer">
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/strana">Украина</a></li>
+                                    <li><a  href="http://business.vesti.ua/">Бизнес</a></li>
+                                    <li><a  href="http://vesti-ukr.com/politika">Политика</a></li>
+                                    <li><a  href="http://vesti-ukr.com/mir">Мир</a></li>
+                                    <li><a  href="http://vesti-ukr.com/kultura">Культура</a></li>
+                                    <li><a  href="http://vesti-ukr.com/svetskie-vesti">Светские вести</a></li>
+                                    <li><a  href="http://vesti-ukr.com/sport">Спорт</a></li>
+                                    <li><a  href="http://vesti-ukr.com/poleznoe">Полезные вести</a></li>
+                                    <li><a  href="http://vesti-ukr.com/nauka-i-tehnologii">Наука и технологии</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/infografika">Инфографика</a></li>
+                                    <li><a  href="http://photo.vesti-ukr.com">Фото</a></li>
+                                    <li><a  href="http://video.vesti-ukr.com">Видео</a></li>
+                                    <li><a  href="http://auto.vesti.ua/">Авто</a></li>
+                                    <li><a  href="http://vesti-ukr.com/blogs">Мнения</a></li>
+                                    <li class="divider"></li>
+                                    <li><a  href="http://reporter.vesti.ua">Вести Репортер</a></li>
+                                    <li><a target="_blank" href="http://ubr.ua/">UBR.ua</a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCw0yOBzjVydRjSVnXVIGt3w">UBR TV</a></li>
+                                    <li><a target="_blank" href="http://radio.vesti-ukr.com/">Радио Вести</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/kiev"> Киев</a></li>
+                                    <li><a  href="http://vesti-ukr.com/odessa">Одесса</a></li>
+                                    <li><a  href="http://vesti-ukr.com/harkov"> Харьков</a></li>
+                                    <li><a  href="http://vesti-ukr.com/donbass">Донбасс</a></li>
+                                    <li><a  href="http://vesti-ukr.com/pridneprove">Приднепровье</a></li>
+                                    <li><a  href="http://vesti-ukr.com/krym">Крым</a></li>
+                                    <li><a  href="http://vesti-ukr.com/lvov">Львов</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <ul>
+                                    <li><a  href="http://vesti-ukr.com/page/o-proekte-vesti"> О проекте</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/reklama">Реклама</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/pravila-polzovanija"> Использование материалов vesti.ua</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/vakansii">Вакансии</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/soglashenie-o-konfidencialnosti">Соглашение о конфиденциальности</a></li>
+                                    <li><a  href="http://vesti-ukr.com/page/pravila-polzovanija-sajtom">Правила пользования сайтом</a></li>
+                                </ul>
+                                <div class="counters">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -539,6 +539,11 @@ a {
     margin-top: 15px;
 }
 
+.promo-holder {
+    height: 600px;
+    overflow: hidden;
+}
+
 .promo-holder > div,
 .promo-holder > img {
     margin: 0 auto !important;
@@ -784,6 +789,10 @@ a {
 /*----------------Right Colomn--------------------*/
 .content-main-right {
     padding: 0;
+    height: 350px !important;
+    /*border: 1px solid #dedede;*/
+    display: block;
+    overflow: hidden;
 }
 .content-main-right .nav-tabs {
     padding-top: 15px;
@@ -1786,10 +1795,6 @@ a {
     }
     .content-main-left {
         margin-top: -528px;
-    }
-    .content-main-right {
-        margin-top: -521px;
-        float: right;
     }
     .top-news a {
         font-size: 16px;

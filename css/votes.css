@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BanderaPro';
+    src: url('../fonts/BanderaPro.eot');
+    src: url('../fonts/BanderaPro.woff2') format('woff2'),
+    url('../fonts/BanderaPro.woff') format('woff'),
+    url('../fonts/BanderaPro.ttf') format('truetype'),
+    url('../fonts/BanderaPro.svg#BanderaPro') format('svg'),
+    url('../fonts/BanderaPro.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.votes-holder .vote-banner img {
+    margin: 0 auto;
+}
+
+.votes-holder .vote-block {
+    margin: 25px 0;
+    text-align: center;
+    font-family: 'BanderaPro';
+    font-weight: 900;
+}
+
+.votes-holder .vote-block .desc {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    /*height: 40px;*/
+}
+
+@media screen and (max-width: 767px) {
+    .votes-holder .vote-banner {
+        margin: 15px;
+    }
+
+}
