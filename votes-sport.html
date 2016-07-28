@@ -6,7 +6,7 @@
     <meta name="robots" content="index,follow">
     <meta name="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Голосования | Вести</title>
+    <title>Голосование Лучший спортсмен | Вести</title>
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
@@ -141,108 +141,137 @@
 
 <!-- Vote -->
 
-    <div class="votes-holder vote-main">
+    <div class="votes-holder vote-page">
         <div class="row vote-banner">
-            <img src="img/votes/vote-banner-big.png" class="img-responsive" alt="" >
+            <img src="img/votes/vote-banner-sport.png" class="img-responsive" alt="" >
         </div>
-
+        <form action="votes-result.html">
         <div class="row">
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="votes-sport.html">
-                    <img src="img/votes/ico-1.png" alt="">
-                    <div class="desc">Лучший спортсмен</div>
-                </a>
+                <input id="sport-1" type="radio" name="sport" value="sport-1" />
+                <label for="sport-1">
+                    <img src="img/votes/sport-1.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                    <div class="name">Владимир Кличко</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-1.png"></div>
+                    <div class="col-sm-9 plr">
+                    <div class="about">Олимпийский чемпион Атланты-96. Сразу после победы на Олимпиаде ушел в профессиональный бокс, где стал одним из величайших супертяжей в истории. 10 лет удерживал звание чемпиона мира по боксу среди профи. Провел 59 поединков: 56 побед (49 нокаутом), 3 поражения. Свой 60-й бой Кличко собирается провести в октябре.</div>
+
+
+                    </div>
+                </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-2.png" alt="">
-                    <div class="desc">Лучший президент</div>
-                </a>
+                <input id="sport-2" type="radio" name="sport" value="sport-2" />
+                <label for="sport-2">
+                    <img src="img/votes/sport-2.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Андрей Шевченко</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-2.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Лучший футболист в истории независимой Украины. Обладатель «Золотого мяча» —2004, который вручается лучшему футболисту мира. Рекордсмен по количеству голов за сборную Украины (48 мячей). Четвертьфиналист чемпионата мира — 2006. В июле 2016 года стал главным тренером национальной сборной Украины.</div>
+                    </div>
+                </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-3.png" alt="">
-                    <div class="desc">Лучший мэр</div>
-                </a>
+                <input id="sport-3" type="radio" name="sport" value="sport-3" />
+                <label for="sport-3">
+                    <img src="img/votes/sport-3.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Сергей Бубка</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-3.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">35-кратный рекордсмен мира в прыжках с шестом. Его рекордный результат 6,14 м, установленный на стадионе в Италии, держится уже 22 года. Олимпийский чемпион, шестикратный чемпион мира, нынешний глава НОК Украины.</div>
+                    </div>
+                </label>
             </div>
 
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-4.png" alt="">
-                    <div class="desc">Лучший исполнитель</div>
-                </a>
+                <input id="sport-4" type="radio" name="sport" value="sport-4" />
+                <label for="sport-4">
+                    <img src="img/votes/sport-4.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Оксана Баюл</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-4.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Первая олимпийская чемпионка в истории независимой Украины. Оксана завоевала «золото» в фигурном катании в 1994 году на Играх в Лиллехаммере. Долгое время это было единственное «золото» нашей страны на зимних Олимпийских играх. В 2014-м это достижение повторили биатлонистки. Сама Баюл уже много лет живет в США.</div>
+                    </div>
+                </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-5.png" alt="">
-                    <div class="desc">Лучший полнометражный фильм</div>
-                </a>
+                <input id="sport-5" type="radio" name="sport" value="sport-5" />
+                <label for="sport-5">
+                    <img src="img/votes/sport-5.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Яна Клочкова</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-5.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Пловчиха, единственная четырехкратная олимпийская чемпионка в Украине. Свои медали Яна взяла на двух Олимпиадах — в 2000 году в Сиднее и в 2004 году в Афинах — на дистанциях 200 и 400 метров комплексным плаванием.</div>
+                    </div>
+                </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-6.png" alt="">
-                    <div class="desc">Лучшие телесериалы</div>
-                </a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-7.png" alt="">
-                    <div class="desc">Лучшая книга/писатель </div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-8.png" alt="">
-                    <div class="desc">Лучшая песня</div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-9.png" alt="">
-                    <div class="desc">Лучшиий врач</div>
-                </a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-10.png" alt="">
-                    <div class="desc">Лучшая група</div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-11.png" alt="">
-                    <div class="desc">Легендарные украинцы</div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-12.png" alt="">
-                    <div class="desc">«Сделано в Украине»</div>
-                </a>
+                <input id="sport-6" type="radio" name="sport" value="sport-6" />
+                <label for="sport-6">
+                    <img src="img/votes/sport-6.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Лилия Подкопаева</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-6.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Двукратная олимпийская чемпионка по спортивной гимнастике. Обе свои медали Лилия взяла на первой летней Олимпиаде для Украины, которая прошла в 1996 году в Атланте. Подкопаева была лучшей в многоборье и вольных упражнениях. За год до этого Лилия стала абсолютной чемпионкой мира.</div>
+                    </div>
+                </label>
             </div>
 
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-13.png" alt="">
-                    <div class="desc">Лучшие фестивали</div>
-                </a>
+                <input id="sport-7" type="radio" name="sport" value="sport-7" />
+                <label for="sport-7">
+                    <img src="img/votes/sport-7.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Василий Ломаченко</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-7.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Двукратный олимпийский чемпион по боксу. На верхнюю ступень пьедестала он поднимался в Пекине-2008 и Лондоне-2012. После этого ушел в профессионалы, где уже успел выиграть пояс чемпиона мира. Считается одним из самых перспективных профи современности.</div>
+                    </div>
+                </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-14.png" alt="">
-                    <div class="desc">Лучший телеканал</div>
-                </a>
-            </div>
-            <div class="col-xs-12 col-sm-4 vote-block">
-                <a href="#">
-                    <img src="img/votes/ico-15.png" alt="">
-                    <div class="desc">Лучшие в мире</div>
-                </a>
+                <input id="sport-8" type="radio" name="sport" value="sport-8" />
+                <label for="sport-8">
+                    <img src="img/votes/sport-8.png" class="img-responsive img-vote" alt="">
+                    <div class="col-sm-3 plr"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="name">Ольга Харлан</div>
+                    </div>
+                    <div class="col-xs-3 plr"><img class="img-ico" src="img/votes/ico-vote-8.png"></div>
+                    <div class="col-sm-9 plr">
+                        <div class="about">Олимпийская чемпионка Пекина-2008 в командном первенстве. Свою первую медаль Олимпиады выиграла в 17 лет. Также в активе Харлан «золото» чемпионатов мира и Европы. Ольга — одна из главных надежд сборной Украины на Играх-2016 в Рио-де-Жанейро.</div>
+                    </div>
+                </label>
             </div>
         </div>
-
+         <div class="row">
+            <div class="col-sm-6 btns-vote">
+                <a href="votes.html" class="btn">Все опросы</a>
+             </div>
+             <div class="col-sm-6 btns-vote">
+                 <button type="submit" class="btn">Проголосовать</button>
+             </div>
+        </form>
 
     </div>
 <!-- end Vote -->
