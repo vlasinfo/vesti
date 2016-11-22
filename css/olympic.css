@@ -1,0 +1,64 @@
+.tables_main table.table {
+    margin-bottom: 10px;
+}
+
+.tables_main .b-read-more {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.olympic-channel object {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tables_main .b-read-more a {
+    color: #06256c;
+}
+
+.article .article-subtitle {
+    margin-bottom: 20px;
+}
+.tables_main .table>tbody>tr>th {
+    padding-top: 0;
+
+}
+.tables_main .table>tbody>tr>th,
+.tables_main .table>tbody>tr>td {
+    vertical-align: baseline;
+    padding: 5px;
+}
+
+.account_matches_number_in {
+    padding-right: 7px !important;
+}
+.tables_main .account_matches_name_in {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tables_main .selected-tr {
+    font-weight: bold;
+}
+
+.tables_main .table>tbody>tr>td, .world_cup_tables_main .table>tbody>tr>td {
+    border-top: 1px dashed #ddd;
+}
+
+.table .flag {
+    width: 18px;
+    height: 18px;
+}
+
+.article .table .flag {
+    width: 28px;
+    height: 28px;
+}
+
+.tables_main .medal {
+    width: 12px;
+}
+
+.tables_main .medal.total {
+    width: 22px;
+}

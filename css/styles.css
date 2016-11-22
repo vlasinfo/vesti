@@ -1489,6 +1489,7 @@ a {
     padding: 5px;
     position: relative;
 }
+.table .flag,
 .table-rate .flag,
 .table-dates .flag {
     border-radius: 0;
@@ -1500,8 +1501,8 @@ a {
     display: inline-block;
     vertical-align: middle;
     margin: 0 5px 0 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 .table-rate .flag {
     position: absolute;
@@ -3452,10 +3453,16 @@ body .team-right-report a img {
 .world_cup_tables_main .table.table-striped {
     margin-bottom: 5px;
 }
-
+.tables_main .table>tbody>tr>th,
 .world_cup_tables_main .table>tbody>tr>th {
     border-top: 0;
 }
+
+.tables_main .selected-tr {
+    font-weight: bold;
+}
+
+.tables_main .table>tbody>tr>td,
 .world_cup_tables_main .table>tbody>tr>td {
     border-top: 1px dashed #ddd;
 }

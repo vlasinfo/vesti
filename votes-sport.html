@@ -148,7 +148,7 @@
         <form action="votes-result.html">
         <div class="row">
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-1" type="radio" name="sport" value="sport-1" />
+                <input id="sport-1" class="radio-vote" type="radio" name="sport" value="sport-1" />
                 <label for="sport-1">
                     <img src="img/votes/sport-1.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -164,7 +164,7 @@
                 </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-2" type="radio" name="sport" value="sport-2" />
+                <input id="sport-2" class="radio-vote" type="radio" name="sport" value="sport-2" />
                 <label for="sport-2">
                     <img src="img/votes/sport-2.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -178,7 +178,7 @@
                 </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-3" type="radio" name="sport" value="sport-3" />
+                <input id="sport-3" class="radio-vote" type="radio" name="sport" value="sport-3" />
                 <label for="sport-3">
                     <img src="img/votes/sport-3.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -193,7 +193,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-4" type="radio" name="sport" value="sport-4" />
+                <input id="sport-4" class="radio-vote" type="radio" name="sport" value="sport-4" />
                 <label for="sport-4">
                     <img src="img/votes/sport-4.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -207,7 +207,7 @@
                 </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-5" type="radio" name="sport" value="sport-5" />
+                <input id="sport-5" class="radio-vote" type="radio" name="sport" value="sport-5" />
                 <label for="sport-5">
                     <img src="img/votes/sport-5.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -221,7 +221,7 @@
                 </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-6" type="radio" name="sport" value="sport-6" />
+                <input id="sport-6" class="radio-vote" type="radio" name="sport" value="sport-6" />
                 <label for="sport-6">
                     <img src="img/votes/sport-6.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -236,7 +236,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-7" type="radio" name="sport" value="sport-7" />
+                <input id="sport-7" class="radio-vote" type="radio" name="sport" value="sport-7" />
                 <label for="sport-7">
                     <img src="img/votes/sport-7.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -250,7 +250,7 @@
                 </label>
             </div>
             <div class="col-xs-12 col-sm-4 vote-block">
-                <input id="sport-8" type="radio" name="sport" value="sport-8" />
+                <input id="sport-8" class="radio-vote" type="radio" name="sport" value="sport-8" />
                 <label for="sport-8">
                     <img src="img/votes/sport-8.png" class="img-responsive img-vote" alt="">
                     <div class="col-sm-3 plr"></div>
@@ -269,8 +269,9 @@
                 <a href="votes.html" class="btn">Все опросы</a>
              </div>
              <div class="col-sm-6 btns-vote">
-                 <button type="submit" class="btn">Проголосовать</button>
+                 <button id="scrollHere" type="submit" class="btn">Проголосовать</button>
              </div>
+          </div>
         </form>
 
     </div>
@@ -351,7 +352,14 @@
     </footer>
 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    $(".radio-vote").change(function (e) {
+        $('html, body').delay(700).animate({
+            scrollTop: $("#scrollHere").offset().top
+        }, 1000);
+    });
+</script>
 
 </body>
 </html>

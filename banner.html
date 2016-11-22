@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="https://a4p.adpartner.pro/ap_content_ad_iframe.min.js"></script>
+    <style>
+        #bannerNews {font-family: Roboto}
+        #bannerNews .banner-head {text-align:center;margin:10px 0;}
+        #bannerNews .banner-head div {font-size:15px;font-weight:bold;color: #ee7f01;background-color:#f3f3f3;padding:5px 10px;text-transform:uppercase;display:inline-block}
+        #bannerNews .banner-promo{width:100%;position:relative;background:#333333}
+        #bannerNews .banner-promo .part{position:relative;float:left;width:50%}
+        #bannerNews .banner-promo .part a {display:block;text-decoration:none}
+        #bannerNews .banner-promo .part a .text{font-size:14px;color:#ffffff;text-decoration:none;position:absolute;left:170px;padding-top:10px}
+		#bannerNews .banner-promo .part a:hover,
+        #bannerNews .banner-promo .part:hover a .text{text-decoration:underline}
+        #bannerNews .banner-promo .part a .img {float:left;padding:10px}
+        #bannerNews .banner-promo .part a .img img{max-width:150px;display:block}
+		#bannerNews .banner-promo .close {position:absolute;display:block;top:4px;right:4px;opacity:0.8;z-index:2;}
+		#bannerNews .banner-promo .close:hover {opacity:1;}
+        @media(max-width:640px) {
+        #bannerNews .banner-promo .part{width: 100%;float: none;padding:0}
+		#bannerNews .banner-promo {padding-top:10px}
+		#bannerNews .banner-promo .part {padding:0 10px 10px 10px}
+		#bannerNews .banner-promo .part a .img{padding:0 10px 0 0}
+		#bannerNews .banner-promo .part a .text {font-size:15px;position:relative;left:0;padding-top:0;padding-right: 20px;max-height:85px;overflow:hidden}
+        }
+    </style>
+</head>
+<body style="overflow:hidden;margin:0">
+
+<div id="bannerNews">
+    <div class="banner-head"><div>Сейчас также читают</div></div>
+    <div class="banner-promo">
+	<a href="#"><img src="img/close.png" class="close"></a>
+        <div class="part">
+            <a href="#" onclick="return apContentAd.click();">
+                <div class="img">
+                    <img src="http://vesti-ukr.com/img/article/2075/68_slider2.jpeg">
+                </div>
+                <div class="text">Дабы дурь каждого была видна: В Нафтогазе отреагировали на критику от Путина</div>
+            </a>
+            <div style="clear:both"></div>
+        </div>
+        <div class="part">
+            <a href="#" onclick="return apContentAd.click();">
+                <div class="img">
+                    <img src="http://vesti-ukr.com/img/article/2075/57_slider2.jpeg">
+                </div>
+                <div class="text">Агентура Китая украла секретные документы США, в которых планируется новая война</div>
+            </a>
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+</div>
+
+</body>
+</html>
