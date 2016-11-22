@@ -1585,14 +1585,22 @@
         border-radius: 0;
         margin: 0;
         border: 0;
-        padding: 5px;
+        padding: 5px 25px 5px 5px;
+    }
+    .poster-bottom .close {
+        float: right;
+        font-size: 24px;
+        color: #ffffff !important;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=50);
+        opacity: .5;
     }
     .poster-bottom .container {
         background: transparent;
     }
     .poster-bottom .poster-title {
         color: #ffffff;
-        font-size: 4vw;
+        font-size: 3vw;
         border-bottom: 1px solid #fff;
         position: relative;
         z-index: 10;
@@ -1601,23 +1609,29 @@
         -webkit-animation-duration: .3s;
     }
 
-    .poster-bottom .bg-img {
+    .poster-bottom .poster-img {
         width: 100%;
         height: 170px;
-        position: absolute;
+        position: relative;
         background-size: 440px;
         background-repeat: no-repeat;
+        -webkit-animation-name: fade-in-slide-right-animation;
+        -webkit-animation-duration: .5s;
+        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-delay: .3s;
     }
 
-    .poster-bottom .time {
+    .poster-bottom .poster-subj {
         font-size: 20px;
-        color: #fff;
-        position: relative;
-        z-index: 10;
-    //-webkit-transform: scale(1);
-        -webkit-animation: scale-down-animation 1s 1 ease-in-out;
-        -webkit-animation-duration: 1s;
+        padding: 6px 0 4px 0;
+        color: #B3E5FC;
     }
+
+    .poster-bottom .poster-time {
+        font-size: 16px;
+        color: #B3E5FC;
+    }
+
 </style>
 
 <div class="alert alert-warning alert-dismissible poster-bottom" role="alert">
@@ -1628,13 +1642,13 @@
 
         <div class="row">
             <div class="col-md-5">
-                <div class="bg-img" style="background-image: url('img/bottom-poster.jpg');"></div>
+                <div class="poster-img" style="background-image: url('img/bottom-poster.jpg');"></div>
             </div>
 
             <div class="col-md-7">
                 <div class="poster-title">Свежий взгляд</div>
-                <div class="time">Пн-Пт c 13:00 до 16:00</div>
-                <div class="">Тема: Масштабное отравление детей и 100 дней Трампа</div>
+                <div class="poster-subj">Тема: Масштабное отравление детей и 100 дней Трампа</div>
+                <div class="poster-time">Пн-Пт c 13:00 до 16:00</div>
             </div>
         </div>
 
