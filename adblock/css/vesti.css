@@ -1,0 +1,109 @@
+/* Vesti */
+
+/* 17:11 16.02.2016 */
+
+.news-block {
+    background-color: #f2f2f2;
+    margin: 20px 0;
+}
+.news-block .info-news-block {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 18px;
+}
+.news-block .info-news-block h2 a.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.news-block .info-news-block h2 a.title:before {
+    content: '';
+    width: 136px;
+    height: 3px;
+    margin: 0 auto 16px;
+    display: block;
+    background-color: #0d0806;
+}
+.news-block .info-news-block h2 a.title:hover {
+    color: #b12f2d;
+}
+.news-block .info-news-block .author {
+    color: #b12f2d;
+    padding-bottom: 7px;
+}
+.news-block .info-news-block .btn-read-more {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+    padding: 6px 18px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.news-block .info-news-block .btn-read-more:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000000;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    z-index: -1;
+}
+.news-block .info-news-block .btn-read-more:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.news-block .info-news-block .btn-read-more:hover:after {
+    background-color: #000000;
+    -webkit-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.news-block .image-news-block {
+    padding: 0;
+}
+.news-block .image-news-block .img-article {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.news-block .image-news-block .img-article img {
+    height: 290px;
+}
+/*--------------------Media-----------------------*/
+@media screen and (max-width: 1199px) {
+    .news-block .image-news-block .img-article img {
+        height: 350px;
+    }
+    .news-block .info-news-block {
+        font-size: 16px;
+    }
+    .news-block .info-news-block h2 {
+        margin-top: 10px;
+    }
+    .news-block .info-news-block h2 a.title {
+        font-size: 21px;
+    }
+    .news-block .info-news-block h2 a.title:before {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .image-news-block .img-article img {
+        width: 100%;
+        height: auto !important;
+    }
+}

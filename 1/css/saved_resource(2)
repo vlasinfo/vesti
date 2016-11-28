@@ -1,0 +1,13 @@
+var rt_page_28839=6;
+rtn4p_domain='http://ua.redtram.com/';
+if(!ak){var ak=new Array();}
+var sna_v='07690daa63f0c118c2f502176ef4f9d1';
+//t=28839, o=28839
+ak[0]=sna_v;ak[1]=sna_v;ak[2]=sna_v;
+RedTramH('28839');
+ RedTramAdd('"Будьте ви прокляті, ідіоти нещасні": кохана Лещенка влаштувала істерику через україномовну музику на радіо','22527867','','','22527867.jpg','28839');
+ RedTramAdd('Михайлове чудо: прикмети, історії та заборони ...','2138275540','','','2138275540.jpg','28839');
+ RedTramAdd('Як тримати передріздвяний піст, щоб не грішити і бути ситим','48056766','','','48056766.jpg','28839');
+RedTramF('28839');
+(function(d,s){ var o=d.createElement(s); o.async=true; o.type="text/javascript"; o.charset="utf-8"; o.src="//n4p-ua.redtram.com/rs/?ip=10.1.3.84&k=a6ab3a1aac91b57290302abc6c1f11b6"; var x=d.getElementsByTagName(s)[0]; x.parentNode.insertBefore(o,x); })(document,"script");
+//ip='212.26.136.34'

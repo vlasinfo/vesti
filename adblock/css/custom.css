@@ -1,0 +1,225 @@
+.clearfix-hard,
+.title-rubric {
+    clear: both;
+}
+
+.main-block + .main-block .top-news:first-child {
+    padding-top: 8px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.select-vesti-news > img {
+    max-width: 133px;
+}
+
+.views > span:first-child {
+    display: none;
+}
+
+.opinion-img .img-circle,
+.author-opinion .img-circle {
+    border: 3px solid #009790;
+    padding: 0;
+}
+
+.opinion-img.img113 .img-circle,
+.opinion-img.img-small .img-circle {
+    border-width: 2px;
+    padding: 0;
+}
+
+.photo-gallery-main iframe,
+.photo-gallery-main object,
+.photo-gallery-main embed {
+    max-width: 100%;
+    max-height: 451px;
+}
+
+.photo-row .title-section {
+    margin-left: 15px;
+}
+
+footer .counters {
+    margin-top: 5px;
+}
+
+footer .counters a,
+footer .counters table {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.as_advertising {
+    background-color: #009790;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 5px 2px;
+    text-transform: lowercase;
+}
+
+.embed-responsive > *:not(.embed-responsive-item) {
+    max-width: none !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.b-tool-edit i {
+    font-size: 22px;
+}
+
+.b-tool-edit,
+.b-tool-edit i {
+    color: #009790;
+}
+
+.nav-tabs.links-pvi li {
+    display: inline-block;
+    position: static;
+    float: none;
+    margin: 0;
+}
+
+.nav-tabs.links-pvi {
+    font: bold 16px 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+.nav-tabs.links-pvi a {
+    font: bold 16px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    border: none !important;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 20px 0 0;
+    background: transparent !important;
+}
+.nav-tabs.links-pvi a:hover,
+.nav-tabs.links-pvi a:active,
+.nav-tabs.links-pvi a:focus,
+.nav-tabs.links-pvi a.active,
+.nav-tabs.links-pvi li.active a {
+    color: #06256c;
+    text-decoration: none;
+    border-bottom: 2px solid #06256c !important;
+}
+
+form .poll-result label {
+    font-weight: normal;
+    margin: 0;
+}
+
+form .poll-result__check {
+    width: 25px;
+    float: left;
+    padding: 5px 0;
+}
+
+form .poll-result__check input {
+    position:absolute;
+    z-index:-1000;
+    left:-1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    padding:0;
+    border:0;
+}
+
+form .poll-result__check input + label {
+    padding-left:13px;
+    height:13px;
+    display:inline-block;
+    line-height:13px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:13px;
+    vertical-align:top;
+    cursor:pointer;
+    margin-top: 2px;
+}
+
+form .poll-result__check input:checked + label {
+    background-position: 0 0;
+}
+
+form .poll-result__check input + label {
+    background-image:url(../img/checkboxes.png);
+    background-position: -13px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+form .poll-result__check input[type=radio] + label {
+    background-image:url(../img/radiobuttons.png);
+}
+
+form .poll-result__check input {
+    margin-top: 2px;
+}
+
+form .poll-result__title {
+    padding-left: 25px !important;
+}
+
+.b-vote .error {
+    font-size: 14px;
+    margin: 10px 0;
+    display: none;
+}
+
+.b-vote .btn {
+    border-radius: 0;
+    background: #009790;
+    border: none;
+    font-family: "Roboto", ​sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tags a {
+    height: 40px;
+    display: inline-block;
+}
+
+.photo-gallery-inner.video {
+    padding: 0;
+}
+
+.directionNav,
+.directionNav a {
+    outline: none;
+}
+
+.b-sitemap ul {
+    margin-left: 30px;
+}
+
+.b-sitemap li {
+    font: 15px "Roboto",sans-serif;
+    padding: 5px 0;
+}
+
+.b-sitemap li ul li {
+    font-size: 14px;
+}
+
+footer > .container > .row > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.article .article-text img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+
+.article-text ul{
+    list-style-type: square;
+    padding-left: 40px;
+}

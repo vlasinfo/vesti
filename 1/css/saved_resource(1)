@@ -1,0 +1,147 @@
+(function() {
+	function ShowInformer(obj) { var news='<div style="position:absolute;left:-10000px;"><img class="join_counter" src="//www.partner.join.com.ua/counter.cgi?view=903" width=1 height=1 style="width:1px;height:1px;position:absolute;"><img class="join_counter" data-src="//www.partner.join.com.ua/counter.cgi?pid=903&nid=62843825&nid=62869427&nid=62870993&url='+escape(document.location)+'" width=1 height=1 style="width:1px;height:1px;"></div><table cellpadding=4 cellspacing=4 border=0 width=100%><tr><td align=left width=80><a target="_blank" href="//partner.join.com.ua/xml/go/62843825/903/3356/" class="hrefclass" target=_blank><img class="join_img" src="//partner.join.com.ua/xml/imgs/3230/38/63/3863663034643035626330623838353764363866623534353862316361393264_100x100.jpg" width="75" align="" hspace="" vspace="" border="0" style="margin:3px;"></a></td><td align=left width=90% style="vertical-align:middle;"><a class="join_link" target="_blank" href="//partner.join.com.ua/xml/go/62843825/903/3356/" class="hrefclass" >Трамп: це «сумно», що Клінтон домагається перерахунку голосів</a></td></tr><tr><td align=left width=80><a target="_blank" href="//partner.join.com.ua/xml/go/62869427/903/3356/" class="hrefclass" target=_blank><img class="join_img" src="//partner.join.com.ua/xml/imgs/3230/31/36/3136643734303033313536633030366161383733336562666634643438333638_100x100.jpg" width="75" align="" hspace="" vspace="" border="0" style="margin:3px;"></a></td><td align=left width=90% style="vertical-align:middle;"><a class="join_link" target="_blank" href="//partner.join.com.ua/xml/go/62869427/903/3356/" class="hrefclass" >Луценко: найближчим часом Азарову можуть висунути підозру в держзраді</a></td></tr><tr><td align=left width=80><a target="_blank" href="//partner.join.com.ua/xml/go/62870993/903/3713/" class="hrefclass" target=_blank><img class="join_img" src="//partner.join.com.ua/images/clipart/_loaded01/100x100_img_1480344192.jpg" width="75" align="" hspace="" vspace="" border="0" style="margin:3px;"></a></td><td align=left width=90% style="vertical-align:middle;"><a class="join_link" target="_blank" href="//partner.join.com.ua/xml/go/62870993/903/3713/" class="hrefclass" >&quot;Безвіз і нині там&quot;</a></td></tr></table>'; if(obj != null) obj.innerHTML=news; } document.write('<img width="1" height="1" style="width:1px;height:1px;position:absolute;" src="http://news.join.ua/counter.cgi?newsview='+document.location.href.replace(/^https?:..([^?]+).*$/, '$1')+'">');s=document.createElement("style");
+s.type = "text/css";
+cssCode = ".join_informer_903 * { border: none; padding: 0; margin: 0; }.join_informer_903 { text-align:left; clear: both; background-color:#FFFFFF;}.join_informer_903 a.join_link, a.join_text {font: 16px/20px 'Skolar-Light-Cyrillic',Georgia,'Times New Roman',Times,serif!important; margin-bottom:10px; color:#000000;text-decoration:none;}.join_informer_903 a.join_link:hover, a.join_text:hover { color:#FC7406!important;text-decoration:none;}.join_informer_903 .join_img {width: 100%; margin: 0 !important; }.join_informer_903 table { border-spacing: 0 !important; border: none; }.join_informer_903 td { border: none; vertical-align: top !important; border-bottom: 1px dotted #c5cace!important; padding-left:0; padding-bottom: 5px; padding-top: 10px; }.join_informer_903 td:nth-child(1) { width: 38% !important; padding-right: 10px; }.join_informer_903 td:nth-child(2) { width: auto !important; }.join_informer_903 tr:nth-child(1) td { padding-top: 0 !important; } .join_informer_903 a.hrefclass { display: block; width: 100%; position: relative; overflow: hidden; }.join_informer_903 a.hrefclass:before { content: ''; display: block; padding-bottom: 63%; }.join_informer_903 .join_img { position: absolute; left: 0; right: 0; top: 0; }";
+if (s.styleSheet) { s.styleSheet.cssText = cssCode;
+} else { s.appendChild(document.createTextNode(cssCode));
+}
+document.getElementsByTagName("head")[0].appendChild(s);
+(function (w,d) {
+	var
+		_supportsAddEventListener = !!w.addEventListener,
+		_supportsAttachEvent = !!w.attachEvent,
+		_supportsClassList = !!d.body.classList;	
+		
+		
+		
+	function log(s) {
+//		window.console && console.log(s);
+		return true;
+	}
+		
+	function _addEventListener(element, eventName, callback) {
+		if (_supportsAddEventListener) {
+			element.addEventListener(eventName, callback);
+			return;
+		}
+		if (_supportsAttachEvent) {
+			element.attachEvent('on' + eventName, (function (el) {
+				return function () {
+					callback.call(el, w.event);
+				};
+			}(element)));
+			element = null;
+		}
+	}
+
+	function _removeEventListener(element, eventName, callback) {
+		if (_supportsAddEventListener) {
+			element.removeEventListener(eventName, callback);
+			return;
+		}
+		if (_supportsAttachEvent) {
+			element.detachEvent('on' + eventName, callback);
+		}
+	}
+
+	function _isInsideViewport(element, container, threshold) {
+
+		var ownerDocument, documentTop, documentLeft;
+
+		function _getDocumentWidth() {
+			return w.innerWidth || (ownerDocument.documentElement.clientWidth || d.body.clientWidth);
+		}
+
+		function _getDocumentHeight() {
+			return w.innerHeight || (ownerDocument.documentElement.clientHeight || d.body.clientHeight);
+		}
+
+		function _getTopOffset(element) {
+			return element.getBoundingClientRect().top + documentTop - ownerDocument.documentElement.clientTop;
+		}
+
+		function _getLeftOffset(element) {
+			return element.getBoundingClientRect().left + documentLeft - ownerDocument.documentElement.clientLeft;
+		}
+
+		function _isBelowViewport() {
+			return _getDocumentHeight() + documentTop <= _getTopOffset(element) - threshold;
+		}
+
+		function _isAtRightOfViewport() {
+			return _getDocumentWidth() + w.pageXOffset <= _getLeftOffset(element) - threshold;
+		}
+
+		function _isAboveViewport() {
+			return documentTop >= _getTopOffset(element) + threshold + element.offsetHeight;
+		}
+
+		function _isAtLeftOfViewport() {
+			var fold;
+			fold = documentLeft;
+			return fold >= _getLeftOffset(element) + threshold + element.offsetWidth;
+		}
+
+		ownerDocument = element.ownerDocument;
+		documentTop = w.pageYOffset || ownerDocument.body.scrollTop;
+		documentLeft = w.pageXOffset || ownerDocument.body.scrollLeft;
+
+		return !_isBelowViewport() && !_isAboveViewport() && !_isAtRightOfViewport() && !_isAtLeftOfViewport();
+	}
+
+	function _getElementsByClassName(className, node) {
+		if(d.getElementsByClassName) {
+			return (node || d).getElementsByClassName(className)
+		} else {
+			var node = node || d,
+			list = node.getElementsByTagName('*'), 
+			length = list.length,  
+			result = [], i,j
+			for(i = 0; i < length; i++) {
+				if(list[i].className == className) {
+					result.push(list[i])
+					break
+				}
+			}
+		
+			return result
+		}
+	}
+
+	function _handleScrollFn() {
+		var visible = _isInsideViewport(informer, w, -100);
+		if(visible) {
+			log('Informer visible');
+			var counters = _getElementsByClassName('join_counter', informer);
+			log(counters);
+			for(var i=0, counter;i<counters.length;++i,counter=counters[i]) {
+				if(counter !== undefined) {
+					log(counter);
+					var src = counter.getAttribute('data-src');
+					if (src) {
+						counter.setAttribute("src", src);
+					}
+					
+				}
+			}
+//			informer.style.backgroundColor = "red";
+			_removeEventListener(w, "scroll", _handleScrollFn);
+//			alert('a');
+		}
+		
+//		console.log('scroll ', informer, visible, counter);
+	}
+	var informer;
+
+	_addEventListener(w, "load", function() {
+		log('Scroll event handler activated');
+		informer = d.getElementById('join_informer_903');
+		_addEventListener(w, "scroll", _handleScrollFn);
+		_handleScrollFn();
+	});
+
+		
+})(window,document);
+
+	ShowInformer(document.getElementById('join_informer_903'));
+})();
